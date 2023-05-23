@@ -1,0 +1,252 @@
+*{
+    font-family: "Dunkin Sans";
+}
+@font-face {
+    font-family: "Dunkin Sans";
+    src: url("fonts/DunkinSans-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  section {
+    padding: 220px 5%;
+  }
+  
+  /* ----------- HEADER --------------- */
+  
+  body {
+    background-color: #ffeed4;
+  }
+  
+  .nav_logo img {
+    width: 80px;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    padding-top: 20px;
+    height: 60px;
+    top: -2%;
+    right: -1%;
+    z-index: 1000;
+    background-color: transparent;
+    padding: 15px 1%;
+  }
+  
+  .navbar,
+  .nav,
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #head.head-nav {
+    /*JS*/
+    background: #ffeed4;
+  }
+  
+  
+  .nav a {
+    font-size: 16px;
+    font-weight: 100;
+    margin-right: 10px;
+    color: black;
+    text-decoration: none;
+    transition: all .50s ease;
+  }
+  
+  .nav a:hover {
+    color: white;
+  }
+  
+  
+  
+  .main a {
+    margin-right: 16px;
+    font-size: 14px;
+  }
+  .main .basket span{
+    position: absolute;
+    margin-top: -0.5%;
+    margin-left: -0.4%;
+    color: black;
+    text-decoration: none;
+  }
+  .user {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user a span {
+    margin-left: 5px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  .user span:hover {
+    color: white;
+  }
+
+  button a {
+    color: black;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+
+
+
+.panier .deli{
+    width: 30px;
+}
+.panier{
+    margin-top: -2%;
+    background-color: #ffeed4;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: -10%;
+
+}
+.panier img{
+    width:100px;
+    padding:8px 0;
+}
+.panier section{
+    width:100%;
+    background-color:#ffeed4;
+}
+table{
+    background-color: #ffeed4;
+    border-collapse: collapse;
+    width:100%;
+    font-size: 13px;
+  position: relative;
+}
+th{ font-size: 30px;
+    padding: 10px 0;
+
+}
+td{
+    text-align: center;
+    border-top: 0.5px solid black;
+}
+tr{ 
+    border-bottom: 0.5px solid black;
+    font-size: 20px;
+}
+.total th{
+    float: left;
+    
+}
+button {
+  border-radius: 20px;
+  border: 1px solid #F8A45A;
+  background-color: #F8A45A;
+
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  cursor: pointer;
+  margin-left: 80%;
+margin-bottom: 10%
+}
+
+
+/* ---------- FOOTER -------------- */
+
+
+.footer-bg {
+    width: 100%;
+  }
+  
+  body::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    opacity: 0.9;
+  }
+  
+  .ch1 {
+    list-style: none;
+    font-size: 1rem;
+    color: #371f1f;
+    font-family: "Dunkin Sans", sans-serif;
+    cursor: pointer;
+    align-items: center;
+  }
+  
+  .container {
+    font-size: 10px;
+    padding-top: 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 15px;
+  }
+  
+  .titre2 {
+    text-align: center;
+  }
+  
+  .cont2 {
+    margin-top: 15px;
+  
+  }
+  
+  .container1 {
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #371f1f;
+    font-family: "Dunkin Sans", sans-serif;
+    font-weight: bolder;
+    font-size: 2em;
+  
+  }
+  
+  .ch1:hover {
+    color: #F5821F;
+    text-decoration: underline;
+  }
+  
+  #im:hover {
+    background-color: #F5821F;
+  }
+  
+  .titre2:hover {
+    color: #F5821F;
+  }
+  
+  hr {
+    color: #371f1f;
+    height: 0.1rem;
+    background-color: #371f1f;
+    border-color: #371f1f;
+  }
+  
+  #none a{
+    text-decoration: none;
+    color: black;
+  }

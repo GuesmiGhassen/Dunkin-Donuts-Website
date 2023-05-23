@@ -1,0 +1,76 @@
+*{
+    font-family: "Dunkin Sans";
+}
+@font-face {
+  font-family: "Dunkin Sans";
+  src: url("fonts/DunkinSans-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+body{
+    background-color:#ffeed4 ;
+}
+.col{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 35%;
+}
+
+.dis{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 50%;
+    margin-top: 5%;
+}
+.t1{
+    font-size: 2.5rem;
+    color: #E11383;
+    margin-left: -7%;
+    white-space: nowrap;
+}
+.t2{
+ margin-left: 6%;
+    font-size:1.5rem;
+    margin-top: 0%;
+    
+}
+.t3{
+    margin-left: -2%;
+    font-size:1.5rem;
+    margin-top: 0%;
+}
+.fo{
+    width: 45%;
+    height:20%;
+    margin-left: 29%;
+
+}
+span{
+    text-decoration: none;
+    color: aliceblue;
+}
+button a{
+    text-decoration: none;
+}
+.Bou{
+  border-radius: 20px;
+  border: 1px solid #F8A45A;
+  background-color: #F8A45A;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  cursor: pointer;
+  margin-left: 45%;   
+    }
+.Bou:hover{
+    background-color:#F5821F ;
+}

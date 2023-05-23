@@ -1,0 +1,417 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-padding-top: 2rem;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  font-family: "Dunkin Sans";
+
+}
+
+@font-face {
+  font-family: "Dunkin Sans";
+  src: url("fonts/DunkinSans-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ----------- HEADER --------------- */
+
+body {
+  background-color: #ffeed4;
+}
+
+.nav_logo img {
+  width: 80px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  padding-top: 20px;
+  height: 60px;
+  right: 0;
+  z-index: 1000;
+  background-color: transparent;
+  padding: 15px 1%;
+  transition: 0.2s;
+  transition: background-color 0.5s ease;
+}
+
+.navbar,
+.nav,
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#head.head-nav {
+  background: #ffeed4;
+}
+
+
+.nav a {
+  font-size: 16px;
+  font-weight: 100;
+  margin-right: 10px;
+  color: black;
+  transition: all .50s ease;
+}
+
+.nav a:hover {
+  color: white;
+}
+
+.main a {
+  margin-right: 16px;
+  font-size: 14px;
+  transition: all .50s ease;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user span {
+  margin-left: 5px;
+  color: black;
+  transition: all .50s ease;
+  text-transform: uppercase;
+}
+
+.user span:hover {
+  color: white;
+}
+
+
+.msg{
+  margin-top: 5.5%;
+  margin-left: 38%;
+  z-index: 1000;
+  position: relative;
+}
+.msg span{
+  font-size: 16px;
+}
+
+.msg i {
+  color: red;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* ---------- PAGE1 -------------- */
+.page1 {
+  background-color: #ffeed4;
+  position: absolute;
+  display: block;
+  margin-top: 8%;
+  margin-left: 25%;
+}
+
+h1 {
+  font-weight: bold;
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+}
+.Create{
+  font-size: 27px;
+}
+p {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin: 20px 0 30px;
+}
+
+span {
+  font-size: 12px;
+}
+
+a {
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 15px 0;
+}
+
+.welcome {
+  font-size: 2.1em;
+}
+
+.hello {
+  font-size: 2.3em;
+}
+
+button {
+  border-radius: 20px;
+  border: 1px solid #F8A45A;
+  background-color: #F8A45A;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  cursor: pointer;
+}
+.main .basket span{
+  position: absolute;
+  margin-top: -0.5%;
+  margin-left: -0.4%;
+  color: black;
+  text-decoration: none;
+}
+button:active {
+  transform: scale(0.95);
+}
+
+
+button.ghost { /* Bouton de sign in et sign up */
+  background-color: transparent;
+  border-color: #FFFFFF;
+}
+
+form {
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 100%;
+  text-align: center;
+}
+
+input { /* name / pass / email */
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+
+.sign {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+  position: relative;
+  width: 768px;
+  min-height: 480px;
+}
+
+.form-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+
+.sign-in {
+  left: 0;
+  width: 50%;
+  z-index: 2;
+}
+
+.sign.right-panel-active .sign-in { /* Translation de sign in*/
+  transform: translateX(100%);
+}
+
+.sign-up {
+  left: 0;
+  width: 50%;
+  opacity: 0;
+  z-index: 1;
+}
+
+.sign.right-panel-active .sign-up { /* Affichage de sign up*/
+  transform: translateX(100%);
+  opacity: 1;
+  z-index: 5;
+}
+
+
+
+.overlay-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out;
+  z-index: 100;
+}
+
+.sign.right-panel-active .overlay-container { /*translation du container*/
+  transform: translateX(-100%);
+}
+
+.overlay {
+  background: #FF416C;
+  background: linear-gradient(to right, #E11383, #F8A45A);
+  color: #FFFFFF;
+  position: relative;
+  left: -100%;
+  height: 100%;
+  width: 200%;
+  transition: transform 0.6s ease-in-out;
+}
+
+.sign.right-panel-active .overlay { /* translation de welcome back*/
+  transform: translateX(50%);
+}
+
+.overlay-panel {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  transition: transform 0.6s ease-in-out;
+}
+
+.overlay-left { /*translation de welcome */
+  transform: translateX(-20%);
+}
+
+.sign.right-panel-active .overlay-left {
+  transform: translateX(0);
+}
+
+.overlay-right {
+  right: 0;
+  transform: translateX(0);
+}
+
+.sign.right-panel-active .overlay-right { 
+  transform: translateX(20%);
+}
+
+.social-container {
+  margin: 20px 0;
+}
+
+.social-container a {
+  border: 1px solid #DDDDDD;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  height: 40px;
+  width: 40px;
+}
+
+.final {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.footer {
+  margin-top: 46%;
+}
+
+
+/* ---------- FOOTER -------------- */
+
+
+
+.footer-bg {
+  width: 100%;
+}
+
+body::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  opacity: 0.9;
+}
+
+.ch1 {
+  list-style: none;
+  font-size: 1rem;
+  color: #371f1f;
+  font-family: "Dunkin Sans", sans-serif;
+  cursor: pointer;
+}
+
+.container {
+  font-size: 10px;
+  padding-top: 20px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 15px;
+}
+
+.titre2 {
+  text-align: center;
+}
+
+.cont2 {
+  margin-top: 15px;
+
+}
+
+.container1 {
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+h1 {
+  text-align: center;
+  color: #371f1f;
+  font-family: "Dunkin Sans", sans-serif;
+  font-weight: bolder;
+  font-size: 2em;
+
+}
+
+.ch1:hover {
+  color: #F5821F;
+  text-decoration: underline;
+}
+
+#im:hover {
+  background-color: #F5821F;
+}
+
+.titre2:hover {
+  color: #F5821F;
+}
+
+hr {
+  color: #371f1f;
+  height: 0.1rem;
+  background-color: #371f1f;
+  border-color: #371f1f;
+}
