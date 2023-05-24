@@ -17,7 +17,7 @@
         $email = $_POST['email'];
         $adress = $_POST['adr'];
         $phone = $_POST['phone'];
-        $req = "INSERT INTO commande SET name='$fname', email='$email', adress='$adr', phone='$phone' , comm='$prod'";
+        $req = "INSERT INTO commande SET name='$fname', email='$email', adress='$adress', phone='$phone' , comm='$prod'";
         $data = $conn->query($req);
     
         if($data) {
