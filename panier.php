@@ -41,7 +41,7 @@ if(isset($_GET['del'])){
             <div class="user">
             <?php
                 if($nom == ''){
-                    echo '<a href="index.php" style="text-decoration: none;"><img src="/images/admin.png" alt="Sign In" width="20px" /><span>Sign In</span></a>';
+                    echo '<a href="index.php" style="text-decoration: none;"><img src="/images/admin.png" alt="Sign In" width="20px" /><span>Log In</span></a>';
                 }else{
                     echo '<a href="LogOut.php" style="text-decoration: none;"><img src="/images/admin.png" alt="Sign In" width="20px" /><span> '.$nom.'</span></a>';
                 }
