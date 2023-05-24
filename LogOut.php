@@ -50,7 +50,7 @@
             <div class="user">
             <?php
                 if($nom == ''){
-                    echo '<a href="index.php"><img src="/images/admin.png" alt="Sign In" width="20px" /><span>Sign In</span></a>';
+                    echo '<a href="index.php"><img src="/images/admin.png" alt="Sign In" width="20px" /><span>Log In</span></a>';
                 }else{
                     echo '<a href="#"><img src="/images/admin.png" alt="Sign In" width="20px" /><span>'.$nom.'</span></a>';
                 }
