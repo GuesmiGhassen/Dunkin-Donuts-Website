@@ -74,7 +74,7 @@
 
     <div class="main">
       <div class="user">
-        <a href="index.html"><img src="/images/admin.png" alt="Sign In" width="20px" /><span style="font-size: 14px;">Sign
+        <a href="index.html"><img src="/images/admin.png" alt="Sign In" width="20px" /><span style="font-size: 14px;">Log
             In</span></a>
       </div>
       <div class="basket">
